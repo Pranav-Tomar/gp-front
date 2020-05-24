@@ -18,8 +18,9 @@ class Popup extends Component {
           }}
         >
           <p>
-            Thank you for participating. You now have <b>Earned goodpoints</b>.
-            Please sign up to claim your points. It only takes a moment
+            Thank you for participating. You now have{" "}
+            <b>{this.props.pntsEarned} goodpoints</b>. Please sign up to claim
+            your points. It only takes a moment
           </p>
           <div className="col s6" style={{ marginInlineStart: "40%" }}>
             <Link
@@ -28,10 +29,13 @@ class Popup extends Component {
                 width: "100px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
-                padding: "3px 8px",
+                padding: "4px 8px",
                 backgroundColor: "blue",
+                textDecoration: "none",
+                color: "white",
+                textAlign: "center",
               }}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btnPopup"
             >
               Sign up
             </Link>

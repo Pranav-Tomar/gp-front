@@ -10,7 +10,9 @@ class Working extends Component {
           <div className="combiner">
             <nav>
               <div className="nav1">
-                <h2>Goodpoints</h2>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                  <h2>Goodpoints</h2>
+                </Link>
                 <h6>&nbsp;&nbsp;Incentivising goodness</h6>
               </div>
               <div className="nav2">
@@ -18,7 +20,11 @@ class Working extends Component {
                   <li>
                     <Link
                       to="/login"
-                      style={{ color: "white", textDecoration: "none" }}
+                      style={{
+                        color: "white",
+                        textDecoration: "none",
+                        fontSize: "large",
+                      }}
                     >
                       Sign in
                     </Link>
@@ -27,7 +33,11 @@ class Working extends Component {
                   <li>
                     <Link
                       to="/register"
-                      style={{ color: "white", textDecoration: "none" }}
+                      style={{
+                        color: "white",
+                        textDecoration: "none",
+                        fontSize: "large",
+                      }}
                     >
                       Sign up
                     </Link>
@@ -93,16 +103,20 @@ class Working extends Component {
                 <Link
                   to="/gdDeed"
                   style={{
-                    width: "90px",
+                    backgroundColor: "#4caf50",
+                    border: "none",
                     borderRadius: "3px",
-                    letterSpacing: "1.5px",
-                    paddingTop: "5px",
-                    paddingBottom: "5px",
-                    fontWeight: "500",
-                    marginTop: "40px",
-                    marginLeft: "40%",
+                    color: "white",
+                    padding: "0px 10px",
+                    textAlign: "center",
+                    textDecoration: "none",
+                    display: "inline-block",
+                    fontSize: "16px",
+                    marginInlineStart: "45%",
+                    marginTop: "20px",
+                    cursor: "pointer",
                   }}
-                  className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                  className="btnW"
                 >
                   Let's Start
                 </Link>
@@ -153,28 +167,42 @@ class Working extends Component {
                 >
                   <ul>
                     <li>
-                      <img
-                        src={require("../images/icon-facebook.svg")}
-                        alt="fbLogo"
-                      ></img>
+                      <Link to="/">
+                        <img
+                          src={require("../images/icon-facebook.svg")}
+                          alt="fbLogo"
+                        ></img>
+                      </Link>
                     </li>
                     <li>
-                      <img
-                        src={require("../images/icon-instagram.svg")}
-                        alt="fbLogo"
-                      ></img>
+                      <a
+                        href="https://www.instagram.com/getgoodpoints/"
+                        target="_blank"
+                      >
+                        <img
+                          src={require("../images/icon-instagram.svg")}
+                          alt="fbLogo"
+                        ></img>
+                      </a>
                     </li>
                     <li>
-                      <img
-                        src={require("../images/icon-twitter.svg")}
-                        alt="fbLogo"
-                      ></img>
+                      <Link to="/">
+                        <img
+                          src={require("../images/icon-twitter.svg")}
+                          alt="fbLogo"
+                        ></img>
+                      </Link>
                     </li>
                     <li>
-                      <img
-                        src={require("../images/icon-youtube.svg")}
-                        alt="fbLogo"
-                      ></img>
+                      <a
+                        href="https://www.linkedin.com/company/goodpoints/?viewAsMember=true"
+                        target="_blank"
+                      >
+                        <img
+                          src={require("../images/Linkedin_icon.svg")}
+                          alt="fbLogo"
+                        ></img>
+                      </a>
                     </li>
                   </ul>
                 </div>

@@ -26,10 +26,13 @@ const PopupProfile = ({ history }) => (
             width: "100px",
             borderRadius: "3px",
             letterSpacing: "1.5px",
-            padding: "3px 8px",
+            padding: "6px 15px",
             backgroundColor: "blue",
+            textDecoration: "none",
+            color: "white",
+            textAlign: "center",
           }}
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+          className="btnPopup"
         >
           Continue
         </Link>
@@ -41,10 +44,13 @@ const PopupProfile = ({ history }) => (
               width: "100px",
               borderRadius: "3px",
               letterSpacing: "1.5px",
-              padding: "3px 8px",
+              padding: "0px 5px",
               backgroundColor: "blue",
+              textDecoration: "none",
+              color: "white",
+              textAlign: "center",
             }}
-            className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+            className="btnPopup"
           >
             <span
               onClick={() => {

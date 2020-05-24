@@ -8,47 +8,77 @@ class Profile extends Component {
     const {
       user: { name },
     } = isAutheticated();
+
+    let btn_classa = this.props.selecteda ? "btnProfile" : "btnProfileS";
+    let btn_classb = this.props.selectedb ? "btnProfile" : "btnProfileS";
+    let btn_classc = this.props.selectedc ? "btnProfile" : "btnProfileS";
+    let btn_classd = this.props.selectedd ? "btnProfile" : "btnProfileS";
+
+    let btn_class1 = this.props.selected1 ? "btnProfile" : "btnProfileS";
+    let btn_class2 = this.props.selected2 ? "btnProfile" : "btnProfileS";
+    let btn_class3 = this.props.selected3 ? "btnProfile" : "btnProfileS";
+    let btn_class4 = this.props.selected4 ? "btnProfile" : "btnProfileS";
+    let btn_class5 = this.props.selected5 ? "btnProfile" : "btnProfileS";
+    let btn_class6 = this.props.selected6 ? "btnProfile" : "btnProfileS";
+    let btn_class7 = this.props.selected7 ? "btnProfile" : "btnProfileS";
+    let btn_class8 = this.props.selected8 ? "btnProfile" : "btnProfileS";
     return (
       <body>
         <div className="content">
           <nav>
             <div className="nav1" style={{ lineHeight: "1rem" }}>
-              <h1
-                style={{
-                  letterSpacing: "1px",
-                  fontSize: "large",
-                  marginLeft: "20px",
-                }}
-              >
-                Goodpoints
-              </h1>
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                <h1
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "large",
+                    marginLeft: "20px",
+                  }}
+                >
+                  Goodpoints
+                </h1>
+              </Link>
               <h6>&nbsp;&nbsp;Incentivising goodness</h6>
             </div>
             <div className="nav2" style={{ float: "right" }}>
               <ul>
                 <li>
-                  <img
-                    src={require("../images/icon-facebook.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <Link to="/">
+                    <img
+                      src={require("../images/icon-facebook.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </Link>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-instagram.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <a
+                    href="https://www.instagram.com/getgoodpoints/"
+                    target="_blank"
+                  >
+                    <img
+                      src={require("../images/icon-instagram.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </a>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-twitter.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <Link to="/">
+                    <img
+                      src={require("../images/icon-twitter.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </Link>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-youtube.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <a
+                    href="https://www.linkedin.com/company/goodpoints/?viewAsMember=true"
+                    target="_blank"
+                  >
+                    <img
+                      src={require("../images/Linkedin_icon.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -101,22 +131,34 @@ class Profile extends Component {
                 <h3>Causes you care</h3>
                 <ul>
                   <li>
-                    <button className="btn btn-large waves-effect waves-light hoverable green accent-3">
+                    <button
+                      className={btn_classa}
+                      onClick={this.props.handlePointsa}
+                    >
                       Environment
                     </button>
                   </li>
                   <li>
-                    <button className="btn btn-large waves-effect waves-light hoverable green accent-3">
+                    <button
+                      className={btn_classb}
+                      onClick={this.props.handlePointsb}
+                    >
                       Education
                     </button>
                   </li>
                   <li>
-                    <button className="btn btn-large waves-effect waves-light hoverable green accent-3">
+                    <button
+                      className={btn_classc}
+                      onClick={this.props.handlePointsc}
+                    >
                       Children
                     </button>
                   </li>
                   <li>
-                    <button className="btn btn-large waves-effect waves-light hoverable green accent-3">
+                    <button
+                      className={btn_classd}
+                      onClick={this.props.handlePointsd}
+                    >
                       Poverty
                     </button>
                   </li>
@@ -153,32 +195,36 @@ class Profile extends Component {
                 <ul>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints1}
+                      disabled={this.props.isButtonDisabled1}
+                      className={btn_class1}
                     >
                       Maintained social distance
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints2}
+                      disabled={this.props.isButtonDisabled2}
+                      className={btn_class2}
                     >
                       Donated to relief fund
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints3}
+                      disabled={this.props.isButtonDisabled3}
+                      className={btn_class3}
                     >
                       Tipped delivery person
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints4}
+                      disabled={this.props.isButtonDisabled4}
+                      className={btn_class4}
                     >
                       Volunteered online and helped
                     </button>
@@ -199,32 +245,36 @@ class Profile extends Component {
                 <ul>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints5}
+                      disabled={this.props.isButtonDisabled5}
+                      className={btn_class5}
                     >
                       Donated blood and contribute
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints6}
+                      disabled={this.props.isButtonDisabled6}
+                      className={btn_class6}
                     >
                       Delivered essential items
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints7}
+                      disabled={this.props.isButtonDisabled7}
+                      className={btn_class7}
                     >
                       Voluteered in Covid19 relief
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={this.props.handlePoints}
-                      className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                      onClick={this.props.handlePoints8}
+                      disabled={this.props.isButtonDisabled8}
+                      className={btn_class8}
                     >
                       Helped Covid19 TF
                     </button>
@@ -249,7 +299,7 @@ class Profile extends Component {
                     float: "right",
                     marginRight: "30%",
                   }}
-                  className="btn"
+                  className="btnProfile"
                 >
                   <span>Submit </span>
                 </Link>

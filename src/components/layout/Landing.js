@@ -9,42 +9,65 @@ class Landing extends Component {
         <div className="content">
           <nav>
             <div className="nav1" style={{ lineHeight: "1rem" }}>
-              <h1
+              <Link
+                to="/"
                 style={{
-                  letterSpacing: "1px",
-                  fontSize: "large",
-                  marginLeft: "20px",
+                  textDecoration: "none",
+                  color: "white",
                 }}
               >
-                Goodpoints
-              </h1>
+                <h1
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "large",
+                    marginLeft: "20px",
+                    marginTop: "12px",
+                  }}
+                >
+                  Goodpoints
+                </h1>
+              </Link>
               <h6>&nbsp;&nbsp;Incentivising goodness</h6>
             </div>
             <div className="nav2" style={{ float: "right" }}>
               <ul>
                 <li>
-                  <img
-                    src={require("../images/icon-facebook.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <Link to="/">
+                    <img
+                      src={require("../images/icon-facebook.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </Link>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-instagram.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <a
+                    href="https://www.instagram.com/getgoodpoints/"
+                    target="_blank"
+                  >
+                    <img
+                      src={require("../images/icon-instagram.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </a>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-twitter.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <Link to="/">
+                    <img
+                      src={require("../images/icon-twitter.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </Link>
                 </li>
                 <li>
-                  <img
-                    src={require("../images/icon-youtube.svg")}
-                    alt="fbLogo"
-                  ></img>
+                  <a
+                    href="https://www.linkedin.com/company/goodpoints/?viewAsMember=true"
+                    target="_blank"
+                  >
+                    <img
+                      src={require("../images/Linkedin_icon.svg")}
+                      alt="fbLogo"
+                    ></img>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -74,7 +97,7 @@ class Landing extends Component {
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
                     }}
-                    className="btn"
+                    className="btnHome"
                   >
                     Register
                   </Link>
@@ -88,7 +111,7 @@ class Landing extends Component {
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
                     }}
-                    className="btn"
+                    className="btnHome"
                   >
                     Log In
                   </Link>
@@ -107,7 +130,7 @@ class Landing extends Component {
                     borderRadius: "3px",
                     letterSpacing: "1.5px",
                   }}
-                  className="btn"
+                  className="btnHome"
                 >
                   <span>Skip and Browse </span>
                 </Link>

@@ -52,7 +52,7 @@ li {
 .quote p {
   font-size: larger;
 }
-.btn {
+.btnHome {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -66,4 +66,10 @@ li {
 }
 #linkbtn {
   margin-left: 28%;
+}
+.nav1 h1:hover {
+  color: aquamarine;
+}
+.btnHome:hover {
+  background-color: #5de7b9;
 }

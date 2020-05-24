@@ -19,8 +19,8 @@ body {
 .nav1 {
   float: left;
   width: 50%;
-  line-height: 1.5rem;
-  margin-top: 13px;
+  line-height: 1.1rem;
+  margin-top: 0;
   margin-left: 12px;
   font-size: large;
 }
@@ -49,4 +49,7 @@ body {
 }
 .footer2 li {
   margin-left: 10px;
+}
+.nav1 h2:hover {
+  color: aquamarine;
 }
