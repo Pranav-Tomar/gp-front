@@ -4,7 +4,6 @@
 }
 body {
   width: 90%;
-  height: 90%;
   font-size: 20px;
   line-height: 2em;
   margin: auto;
@@ -15,13 +14,12 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: xx-small;
+  overflow: hidden;
 }
 .nav1 {
   float: left;
-  width: 50%;
   line-height: 1.1rem;
   margin-top: 0;
-  margin-left: 12px;
   font-size: large;
 }
 .nav2 {
@@ -36,20 +34,31 @@ body {
   color: #ecbf4c;
   font-size: 40px;
 }
-.main1 {
-  float: left;
-  width: 30%;
-}
-.main2 {
-  float: right;
-  width: 60%;
-  line-height: normal;
-  margin-right: 20px;
-  font-size: 11px;
-}
 .footer2 li {
   margin-left: 10px;
 }
 .nav1 h2:hover {
   color: aquamarine;
+}
+.workMain h1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-style: italic;
+  float: left;
+  margin-left: 8%;
+}
+.workMain p {
+  font-size: 11px;
+  float: right;
+  margin-right: 5%;
+  width: 50%;
+  line-height: normal;
+  padding-top: 10px;
+}
+.workMain ul {
+  display: block;
+}
+.workMain li {
+  display: block;
 }

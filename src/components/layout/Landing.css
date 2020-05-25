@@ -4,22 +4,19 @@
 }
 body {
   width: 90%;
-  height: 90%;
   font-size: 20px;
   line-height: 1.6em;
   margin: auto;
 }
-.content {
+.combiner {
   background-color: #1c1c67;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: xx-small;
-  height: 95vh;
 }
 .nav1 {
   float: left;
-  width: 50%;
   line-height: 1rem;
   margin-top: 10px;
   margin-left: 10px;
@@ -64,9 +61,7 @@ li {
   margin: 4px 2px;
   cursor: pointer;
 }
-#linkbtn {
-  margin-left: 28%;
-}
+
 .nav1 h1:hover {
   color: aquamarine;
 }

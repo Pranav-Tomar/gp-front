@@ -49,6 +49,7 @@ const PopupProfile = ({ history }) => (
               textDecoration: "none",
               color: "white",
               textAlign: "center",
+              cursor: "pointer",
             }}
             className="btnPopup"
           >

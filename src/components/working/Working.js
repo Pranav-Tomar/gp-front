@@ -23,20 +23,19 @@ class Working extends Component {
                       style={{
                         color: "white",
                         textDecoration: "none",
-                        fontSize: "large",
+                        fontSize: "15px",
                       }}
                     >
                       Sign in
                     </Link>
                   </li>
-                  &nbsp; &nbsp; &nbsp; &nbsp;
                   <li>
                     <Link
                       to="/register"
                       style={{
                         color: "white",
                         textDecoration: "none",
-                        fontSize: "large",
+                        fontSize: "15px",
                       }}
                     >
                       Sign up
@@ -54,38 +53,26 @@ class Working extends Component {
             <br></br>
 
             <main>
-              <div className="main1">
-                <ul
-                  style={{
-                    marginLeft: "100px",
-                    fontSize: "30px",
-                    fontWeight: "500",
-                    letterSpacing: "0.3rem",
-                  }}
-                >
-                  <li style={{ fontFamily: "italic" }}>GIVE</li>
-                  <br></br>
-                  <li style={{ fontFamily: "italic" }}>EARN</li>
-                  <br></br>
-                  <li style={{ fontFamily: "italic" }}>REDEEM</li>
-                </ul>
-              </div>
-
-              <div className="main2">
-                <ul style={{ marginLeft: "20px", lineHeight: "2.5rem" }}>
+              <div className="workMain">
+                <ul>
                   <li>
+                    <h1>GIVE</h1>
                     <p>
                       Do your bit for the community. Any random act of kindness
                       counts.
                     </p>
                   </li>
+                  <br></br>
                   <li>
+                    <h1>EARN</h1>
                     <p>
                       Earn goodpoints for your kindness. Nothing better than
                       being recognized for doing good
                     </p>
                   </li>
+                  <br></br>
                   <li>
+                    <h1>REDEEM</h1>
                     <p>
                       Yesss, you read it right. Redeem your points with rewards
                       and create your goodness timeline.
@@ -93,13 +80,15 @@ class Working extends Component {
                   </li>
                 </ul>
               </div>
-              <br></br>
-              <br></br>
-              <br></br>
             </main>
 
+            <br></br>
+
             <div className="nextpg">
-              <div className="col s6">
+              <div
+                className="col s6"
+                style={{ textAlign: "center", marginTop: "40px" }}
+              >
                 <Link
                   to="/gdDeed"
                   style={{
@@ -112,7 +101,7 @@ class Working extends Component {
                     textDecoration: "none",
                     display: "inline-block",
                     fontSize: "16px",
-                    marginInlineStart: "45%",
+
                     marginTop: "20px",
                     cursor: "pointer",
                   }}
@@ -121,13 +110,15 @@ class Working extends Component {
                   Let's Start
                 </Link>
               </div>
-              <br></br>
             </div>
-            <br></br>
             <br></br>
 
             <hr
-              style={{ height: "1px", backgroundColor: "blue", border: "none" }}
+              style={{
+                height: "1px",
+                backgroundColor: "#1c1c67",
+                border: "none",
+              }}
             ></hr>
             <footer>
               <div
@@ -138,7 +129,7 @@ class Working extends Component {
                   <ul style={{ listStyle: "none" }}>
                     <li>
                       <Link to="#" style={{ textDecoration: "none" }}>
-                        <span style={{ fontSize: "x-large", color: "gold" }}>
+                        <span style={{ fontSize: "2vw", color: "gold" }}>
                           About
                         </span>
                       </Link>
@@ -146,7 +137,7 @@ class Working extends Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <li>
                       <Link to="#" style={{ textDecoration: "none" }}>
-                        <span style={{ fontSize: "x-large", color: "gold" }}>
+                        <span style={{ fontSize: "2vw", color: "gold" }}>
                           Blog
                         </span>
                       </Link>
@@ -154,7 +145,7 @@ class Working extends Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <li>
                       <Link to="#" style={{ textDecoration: "none" }}>
-                        <span style={{ fontSize: "x-large", color: "gold" }}>
+                        <span style={{ fontSize: "2vw", color: "gold" }}>
                           Contact
                         </span>
                       </Link>
@@ -163,7 +154,11 @@ class Working extends Component {
                 </div>
                 <div
                   className="footer2"
-                  style={{ marginLeft: "80%", marginTop: "8px" }}
+                  style={{
+                    float: "right",
+                    marginTop: "8px",
+                    marginInlineEnd: "2%",
+                  }}
                 >
                   <ul>
                     <li>

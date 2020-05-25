@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4beaf16297fd05a34e0bf88e3c0b08b3",
+    "revision": "68470ba88bb913981098b9b749f76d24",
     "url": "/index.html"
   },
   {
-    "revision": "9f97320fc62112637f56",
-    "url": "/static/css/main.3627b7fb.chunk.css"
+    "revision": "3e46817a5328ae56c4d3",
+    "url": "/static/css/main.6820b2f5.chunk.css"
   },
   {
     "revision": "1d51633622ec55c39211",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.195cb782.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f97320fc62112637f56",
-    "url": "/static/js/main.fd482652.chunk.js"
+    "revision": "3e46817a5328ae56c4d3",
+    "url": "/static/js/main.c4d29436.chunk.js"
   },
   {
     "revision": "6a1aad1d7977ba72651b",
     "url": "/static/js/runtime-main.237b01ea.js"
+  },
+  {
+    "revision": "57eddf9f2e181c3ba633aa0b17a1f660",
+    "url": "/static/media/Linkedin_icon.57eddf9f.svg"
   },
   {
     "revision": "a738376499ac8a902fd2ce03c3030f98",
@@ -34,9 +38,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "810ccee84b0132ca7921a1b0b4ee6021",
     "url": "/static/media/icon-twitter.810ccee8.svg"
-  },
-  {
-    "revision": "8499da129aedb70f3e20262951f7e236",
-    "url": "/static/media/icon-youtube.8499da12.svg"
   }
 ]);

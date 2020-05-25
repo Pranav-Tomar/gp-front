@@ -4,18 +4,17 @@
 }
 body {
   width: 90%;
-  height: 90%;
   font-size: 14px;
   line-height: 1.6em;
   margin: auto;
 }
-.content {
+.combiner {
   background-color: #1c1c67;
   color: white;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1opx;
   font-size: xx-small;
-  height: 95vh;
+  height: max-content;
 }
 .nav1 {
   float: left;
@@ -25,13 +24,13 @@ body {
 .nav1 h2 {
   font-size: 1.2rem;
   padding-bottom: 0;
-  padding-inline-start: 20px;
+  padding-inline-start: 5%;
   padding-top: 25px;
 }
 .nav1 h6 {
   font-weight: normal;
   font-size: 0.6rem;
-  padding-inline-start: 22px;
+  padding-inline-start: 6%;
 }
 .nav2 {
   float: right;
@@ -55,7 +54,6 @@ li {
   letter-spacing: 0.2rem;
 }
 .goodness {
-  margin-inline-start: 37%;
   margin-top: 20px;
 }
 #finish {

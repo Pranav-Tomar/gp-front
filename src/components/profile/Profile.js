@@ -23,7 +23,7 @@ class Profile extends Component {
     let btn_class7 = this.props.selected7 ? "btnProfile" : "btnProfileS";
     let btn_class8 = this.props.selected8 ? "btnProfile" : "btnProfileS";
     return (
-      <body>
+      <div className="bodyP">
         <div className="content">
           <nav>
             <div className="nav1" style={{ lineHeight: "1rem" }}>
@@ -32,13 +32,14 @@ class Profile extends Component {
                   style={{
                     letterSpacing: "1px",
                     fontSize: "large",
-                    marginLeft: "20px",
+                    marginLeft: "5%",
+                    marginTop: "15px",
                   }}
                 >
                   Goodpoints
                 </h1>
               </Link>
-              <h6>&nbsp;&nbsp;Incentivising goodness</h6>
+              <h6>&nbsp;Incentivising goodness</h6>
             </div>
             <div className="nav2" style={{ float: "right" }}>
               <ul>
@@ -96,35 +97,38 @@ class Profile extends Component {
                 style={{
                   border: "1px solid black",
                   backgroundColor: "coral",
+                  height: "auto",
                 }}
               >
                 <svg
-                  height="80"
-                  width="80"
+                  height="10vw"
+                  width="10vw"
                   style={{
-                    marginLeft: "30%",
-                    marginTop: "20px",
+                    margin: "auto",
+                    display: "block",
+                    paddingTop: "20px",
                   }}
                 >
                   <circle
-                    cx="35"
-                    cy="35"
-                    r="30"
+                    cx="50%"
+                    cy="50%"
+                    r="30%"
                     stroke="black"
                     strokeWidth="1"
                     fill="red"
                   />
                   Sorry, your browser does not support inline SVG.
                 </svg>
-                <span
-                  style={{
-                    fontSize: "20px",
-                    color: "black",
-                    marginLeft: "18%",
-                  }}
-                >
-                  <b>{name}</b>
-                </span>
+                <div className="name" style={{ textAlign: "center" }}>
+                  <span
+                    style={{
+                      fontSize: "3vw",
+                      color: "black",
+                    }}
+                  >
+                    <b style={{ fontWeight: "500", fontSize: "2vw" }}>{name}</b>
+                  </span>
+                </div>
               </div>
 
               <div className="blockp1">
@@ -191,7 +195,7 @@ class Profile extends Component {
                   width: "40%",
                 }}
               >
-                <h1>HOME</h1>
+                <h1 style={{ fontSize: "30px" }}>HOME</h1>
                 <ul>
                   <li>
                     <button
@@ -238,10 +242,9 @@ class Profile extends Component {
                   float: "right",
                   marginRight: "5%",
                   width: "40%",
-                  marginTop: "10px",
                 }}
               >
-                <h1>AWAY</h1>
+                <h1 style={{ fontSize: "30px" }}>AWAY</h1>
                 <ul>
                   <li>
                     <button
@@ -282,13 +285,15 @@ class Profile extends Component {
                 </ul>
               </div>
 
-              <input
-                size="30"
-                className="goodness"
-                placeholder="anything else-please type here"
-              ></input>
+              <div className="input" style={{ textAlign: "center" }}>
+                <input
+                  size="30"
+                  className="goodness"
+                  placeholder="anything else-please type here"
+                ></input>
+              </div>
 
-              <div className="submit">
+              <div className="submit" style={{ textAlign: "center" }}>
                 <Link
                   to="/popupProfile"
                   style={{
@@ -296,8 +301,8 @@ class Profile extends Component {
                     borderRadius: "3px",
                     letterSpacing: "1.5px",
                     padding: "0",
-                    float: "right",
-                    marginRight: "30%",
+
+                    textAlign: "center",
                   }}
                   className="btnProfile"
                 >
@@ -305,9 +310,11 @@ class Profile extends Component {
                 </Link>
               </div>
             </main>
+            <br></br>
+            <br></br>
           </div>
         </div>
-      </body>
+      </div>
     );
   }
 }
